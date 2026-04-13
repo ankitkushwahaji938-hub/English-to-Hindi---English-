@@ -362,32 +362,32 @@
 <div class="header">
   <div class="badge">AnkitStudyPoint Tool</div>
   <h1>🎧 English Samjho</h1>
-  <p class="subtitle">Samne English bole → Hindi mein samjho → English mein jawab do</p>
+  <p class="subtitle">Understand English → See Hindi Meaning → Reply in English</p>
 </div>
 
 <!-- Mic Button -->
 <div class="mic-wrap">
   <button class="mic-btn" id="micBtn" onclick="toggleMic()" title="Mic dabao">🎤</button>
-  <p class="status-text" id="statusText">Mic dabao aur English sunao</p>
+  <p class="status-text" id="statusText">Tap the mic and speak in English</p>
 </div>
 
 <!-- Manual Input -->
 <div class="manual-wrap">
   <input class="manual-input" id="manualInput" type="text"
     placeholder="Ya yahan English type karo..." oninput="onType()" />
-  <button class="go-btn" id="goBtn" onclick="processManual()" disabled>Samjhao ➜</button>
+  <button class="go-btn" id="goBtn" onclick="processManual()" disabled>Translate & Suggest Reply ➜</button>
 </div>
 
 <!-- Transcript -->
 <div class="card" id="transcriptCard">
-  <div class="card-label" style="color:#94a3b8;">🗣️ Suni Gayi English</div>
-  <div class="transcript-text empty" id="transcriptText">Koi awaaz nahi abhi...</div>
+  <div class="card-label" style="color:#94a3b8;">🗣️ Detected English</div>
+  <div class="transcript-text empty" id="transcriptText">No speech detected yet...</div>
 </div>
 
 <!-- Loading -->
 <div class="loading" id="loadingDiv">
   <div class="spinner"></div>
-  <p>Hindi mein translate ho raha hai...</p>
+  <p>It is being translated in Hindi...</p>
 </div>
 
 <!-- Error -->
@@ -398,20 +398,20 @@
 
   <!-- Hindi Meaning -->
   <div class="hindi-card">
-    <div class="card-label">🇮🇳 Hindi Mein Matlab</div>
+    <div class="card-label">🇮🇳 Meaning in Hindi </div>
     <div class="hindi-meaning" id="hindiMeaning">—</div>
     <div class="context-pill" id="contextPill"></div>
   </div>
 
   <!-- Reply Suggestions -->
   <div class="replies-card">
-    <div class="card-label">💬 Aap English Mein Kya Bol Sakte Ho</div>
+    <div class="card-label">💬 What can you say in English?</div>
     <div id="repliesList"></div>
-    <p style="font-size:11px;color:#475569;text-align:right;margin-top:6px;">Tap karke copy karein 📋</p>
+    <p style="font-size:11px;color:#475569;text-align:right;margin-top:6px;">Tap to copy  📋</p>
   </div>
 
   <div class="reset-wrap">
-    <button class="reset-btn" onclick="resetAll()">🔄 Naya sentence sunao</button>
+    <button class="reset-btn" onclick="resetAll()">🔄 Make A new sentance </button>
   </div>
 
 </div>
@@ -425,14 +425,14 @@
 
 <!-- Footer -->
 <div class="free-note">
-  <span>✅ 100% Free</span> &nbsp;|&nbsp; No API Key &nbsp;|&nbsp; No Login<br/>
+  <span>✅ 100% Free</span> &nbsp;|&nbsp; AnkitstudyPoint &nbsp;|&nbsp; No Login<br/>
   <span style="background:none;border:none;color:#475569;font-size:10px;">
     Translation: MyMemory (free) | Speech: Browser built-in
   </span>
 </div>
 
 <!-- Toast -->
-<div class="copy-toast" id="copyToast">✅ Copy ho gaya!</div>
+<div class="copy-toast" id="copyToast">✅ Copy!</div>
 
 <script>
 /* ============================================================
